@@ -1,0 +1,28 @@
+//1. get all child nodes under <div id='123'>
+const divElement = document.getElementById("123")
+
+//2. get all node types children (return (static) NodeList, can use forEach)
+const divChildNodes = divElement.childNodes
+console.log(divChildNodes.length) //3
+divChildNodes.forEach((child) => console.log(child))
+
+//3. get only Element node type children (retunr (dynamic) HTMLCollection, cannot use forEach)
+const divChildren = divElement.children
+console.log(divChildren.length) //2
+// for (let i = 0; i < divChildren.length; i++) {
+//   console.log(divChildren[i])
+// }
+Array.from(divChildren).forEach((child) => console.log(child))
+
+// get all attribute on <div id='123'>
+const divAttrs = divElement.attributes
+console.log(divAttrs.length) // 2
+
+for(let i = 0; i < divAttrs.length; i++){
+    const attrName = divAttrs[i].name       // get attribute name
+    const attrValue = divAttrs[i].value     // get attribute value
+    console.log(`attribute name: ${attrName}, attribute value: ${attrValue}`)
+    console.log(divAttrs[i].ownerElement)
+}
+console.log(divElement.getAttribute("id"))      // find attribute value
+console.log(divElement.getAttribute("style"))   // find attribute value 
