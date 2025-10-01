@@ -1,0 +1,29 @@
+//1. getElementByName()
+    //return NodeList (array-like) data type, implement forEach
+const fnameElement = document.getElementsByName("fname")
+// console.log(fnameElement.length)
+fnameElement.forEach((ele) => console.log(ele))
+fnameElement.children
+
+//2. getElementByTagName()
+    //return HTMLCollection (array-like) data type
+const inputElements = document.getElementsByTagName("input")
+// Array.from(inputElements).forEach((ele) => console.log(ele))
+
+//3. getElementByClassName()
+    //return HTMLCollection (array-like) data type
+const veganElements = document.getElementsByClassName("vegan")
+// Array.from(veganElements).forEach((ele) => console.log(ele))
+
+//4. find the first element of document that has an ID values "appetizer" or "soup"
+//5. find all meat elements under <ul id="appetizer"> or <ul id="soup"> only
+// const pairElements = [document.getElementById("appetizer"), document.getElementById("soup")]
+// const meatElement = document.querySelectorAll(".meat");
+// pairElements.appendChild(meatElement)
+// Array.from(pairElements).forEach((ele) => console.log(ele))
+
+
+//011 หน้าบ้านSIT
+const firstele = document.querySelector("#appetizer") || document.querySelector("#soup")
+const under = firstele.querySelectorAll(".meat")
+under.forEach(e => console.log(e))

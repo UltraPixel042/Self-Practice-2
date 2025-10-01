@@ -1,0 +1,39 @@
+// 1. display all child nodes under <ul id="appetizer">
+const ulElement = document.querySelector("#appetizer"); // css selector
+// console.log(ulElement)
+
+// const meatElement = document.querySelector(".meat")         // css selector
+// console.log(meatElement)
+
+const meatElementAll = document.querySelectorAll(".meat"); // css selector
+// console.log(meatElementAll)
+
+// 2. find meat element that a text value contains "soup"
+//#sol1
+// const meatSoupElements = Array.from(meatAllElements).filter((ele) =>
+//   ele.textContent.toLowerCase().includes("soup")
+// )
+// console.log(meatSoupElements)
+//#sol2
+const result = []
+meatElementAll.forEach((item) => {
+  if (item.textContent.toLowerCase().includes("soup")) {
+    result.push(item)
+  }
+})
+console.log(result)a
+
+//3. goto the first child element node under <ul id="soup"> and display all sibling nodes
+//output :
+
+/* <li class="meat">Spicy Bacon-Corn Soup</li>
+        <li class="vegan">Vegetable Soup</li>   
+        <li class="meat">Beef Soup</li>
+        <li class="vegan">Coconut Soup</li> */
+const soupElement = document.querySelector("#soup")
+// let currentNode = ulElement.children[0]
+let currentNode = ulElement.firstElementChild
+while (currentNode !== null) {
+  console.log(currentNode)
+  currentNode = currentNode.nextElementSibling
+}
