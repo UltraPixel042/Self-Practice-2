@@ -1,0 +1,33 @@
+const submitButton = document.querySelector("button")
+// console.log(submitButton)
+
+// 1. add event with anonymous handle function
+submitButton.addEventListener("click", (event) => {
+    console.log(event.target)
+    console.log(event.currentTarget)
+    console.log(event.eventPhase)
+    console.log("Submit button was clicked!")
+})
+submitButton.removeEventListener("click", (event) => {
+    console.log(event.target)
+    console.log(event.currentTarget)
+    console.log(event.eventPhase)
+    console.console("Submit button was clicked!")
+})                                                    // doesn't work
+
+// 2. add event with named function
+// const handlerButton = () => {
+//     console.log("Submit button was clicked!")
+// }
+// submitButton.addEventListener("click", handlerButton)
+// // submitButton.removeEventListener("click", handlerButton)
+
+const divElement = document.querySelector("div")
+divElement.addEventListener("click", () => {
+    console.log("Div was clicked!")
+}, true)
+
+// const bodyElement = document.body
+// bodyElement.addEventListener("click", () => {
+//     console.log("Body was clicked!")
+// }, true)
