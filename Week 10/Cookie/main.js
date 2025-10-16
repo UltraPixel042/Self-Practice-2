@@ -1,0 +1,11 @@
+// let like = sessionStorage.getItem("like")
+// if(sessionStorage.getItem("like") === null)
+//     sessionStorage.setItem("like", like)
+// else sessionStorage.setItem("like", ++like)
+// alert(sessionStorage.getItem("like"))
+
+let likes = localStorage.getItem("likes")
+if(localStorage.getItem("likes") === null)
+    localStorage.setItem("likes", likes)
+else localStorage.setItem("likes", ++likes)
+alert(localStorage.getItem("likes"))
