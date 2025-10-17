@@ -1,2 +1,12 @@
-# *Functional programming*
-## Functional programming เป็นกระบวนการเขียนโปรแกรมที่ถูกสร้างขึ้นโดยประยุกต์และเรียบเรียงฟังก์ชั่น
+# **Functional programming**
+- closures 
+- functional scope 
+- nested function 
+- function types -
+- function composition 
+- pure function 
+- immutability 
+- declare code 
+- first-class 
+- higher-order function 
+- functional programming
