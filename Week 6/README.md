@@ -2,7 +2,7 @@
 - closures 
 - functional scope 
 - nested function 
-- function types -
+- function types 
 - function composition 
 - pure function 
 - immutability 
