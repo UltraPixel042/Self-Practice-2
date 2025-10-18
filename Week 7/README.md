@@ -1,0 +1,29 @@
+# **Document Object Modeling (DOM) 1**
+- Definition of Document Object Modeling
+- <script> Tag Placement
+- Document Children
+- Nodes Types
+    - Nodename & nodeType & nodeValue
+    - Element
+    - Attr
+    - innerHTML & innerText & textContent
+- Traversing Nodes
+    - Node Relationships
+    - Element Traversal
+        - childElementCount
+        - firstElementChild
+        - lastElementChild
+        - previousElementSibling
+        - nextElementSibling
+- Selecting Nodes
+    - HTMLCollection & NodeList
+    - Selecting Element
+    - querySelector & querySelectorAll
+- Manipulating Nodes
+    - createElement
+    - createAttribute
+    - createTextNode
+- System Dialogs
+    - alert()
+    - confirm()
+    - prompt()
